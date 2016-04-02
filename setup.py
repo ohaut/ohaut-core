@@ -54,7 +54,7 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
 
     py_modules=['ohaut'],
-    install_requires=['paho-mqtt'],
+    install_requires=['paho-mqtt', 'attrdict'],
     # extras_require={
     #    'dev': ['check-manifest'],
     #    'test': ['coverage'],

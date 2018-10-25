@@ -37,8 +37,6 @@ class DeviceManager(object):
             device.go_offline()
             self._online.pop(device_id)
 
-        print(self._devices)
-
     def handle_device_details(self, device_id, details):
         device = self.get_device(device_id)
         if device:

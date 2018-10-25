@@ -1,10 +1,12 @@
 import os.path
 
+from ohaut import config
 from ohaut import managed_file
 
-class OpenHab:
-    def __init__(self, cfg_dir):
-        self._cfg_dir = cfg_dir
+
+class OpenHab(object):
+    def __init__(self):
+        self._cfg_dir = config.get().openhab_config_dir
 
     def room_sitemap(self, room):
         path = os.path.join(self._cfg_dir,
